@@ -18,7 +18,7 @@ Collection + Map + Implementattion + Java + Example
 * Where ever there is sorting, null values would not be allowed
 
 ## Main Interfaces that extend Collection<E> Interface.
-- 1. List<E>, 2. Set<E>, 3. Queue<E>
+- 1.) List<E>, 2.) Set<E>, 3.) Queue<E>
 - List<E>	  : Allows Dublicates, allows multiple null elements
 - Set<E>		: Do not allow Dublicates, at most one null element
 - Queue<E>	: FIFO, allow dublicates, allows multiple null elements
