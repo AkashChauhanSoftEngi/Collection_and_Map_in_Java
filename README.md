@@ -19,37 +19,37 @@ Collection + Map + Implementattion + Java + Example
 
 ## Main Interfaces that extend Collection<E> Interface.
 - 1.) List<E>, 2.) Set<E>, 3.) Queue<E>
-- List<E>	  : Allows Dublicates, allows multiple null elements
+- List<E>	  	: Allows Dublicates, allows multiple null elements
 - Set<E>		: Do not allow Dublicates, at most one null element
-- Queue<E>	: FIFO, allow dublicates, allows multiple null elements
+- Queue<E>		: FIFO, allow dublicates, allows multiple null elements
 
 ## Classes implement List<E> {Allows duplicates, Many null values, order preserved}
-- ArrayList<E>	  : Resizable-array, capacity grows automatically, not synchronized, good for single thread App
+- ArrayList<E>		: Resizable-array, capacity grows automatically, not synchronized, good for single thread App
 - LisnkedList<E>	: not synchronized, insertion/deletion is faster than ArrayList<E>
-- Vector<E>		    : growable array, Vector methods are all synchronized
-- Stack<E>		    : Lifo, implements Vectors<E>, methods are all synchronized
+- Vector<E>		: growable array, Vector methods are all synchronized
+- Stack<E>		: Lifo, implements Vectors<E>, methods are all synchronized
 
 ## Classes implement Set<E> {No duplicates, Max one null value}
 - Hashset<E>			: No duplicates, Max one null value, no gaurantee of same insertion order
-- LinkedHashSet<E>: Hashset<E> + insertion order preserved
+- LinkedHashSet<E>		: Hashset<E> + insertion order preserved
 - TreeSet<E>			: No null value, ordered, order unpreserved
 
 ## Classes implement Queue<E> {FIFO, Allows duplicates, Allows multiple null values}
--LinkedList<E>	  			    : Not thread safe, Allows duplicates, Allows multiple null values
--PriorityQueue<E>	      		: Soreted Ordered, allows dublicates, no null values
--PriorityBlockingQueue<E> 	: Thread Safety + PriorityQueue<E>
--LinkedBlockingQueue<E>		  : Thread safe + allows dublicates, no null values, preserved order
+- LinkedList<E>	  		: Not thread safe, Allows duplicates, Allows multiple null values
+- PriorityQueue<E>	      	: Soreted Ordered, allows dublicates, no null values
+- PriorityBlockingQueue<E> 	: Thread Safety + PriorityQueue<E>
+- LinkedBlockingQueue<E>	: Thread safe + allows dublicates, no null values, preserved order
 
-#Classes implement Map<E> {Unique elements, default: order unpreserved}
-- HashMap<K,V>			  : Unique Elements + Insertion order unpreserved
-        						  : allows one null key[latest value] and multiple null values
-				        		  : Uses equals, Garbage Collection[No]
-						          : Not synchronized, O(1) lookup and insertion
-- Hashtable<K,V>		  : HashMap + Synchronized + no null value or key
-- LinkedHashMap<K,V>	: HashMap<E> + Insertion order preserved, O(1) lookup and insertion
-- IdentityHashMap<K,V>: Uses "==", not equals(), faster than HashMap 
-- Weaked HashMap<K,V>	: HashMap + GC[Yes]
-- TreeMap<K,V>			  : Ordered + Unique elements
-						          : O(log N) lookup and insertion
+## Classes implement Map<E> {Unique elements, default: order unpreserved}
+- HashMap<K,V>			: Unique Elements + Insertion order unpreserved
+        			: allows one null key[latest value] and multiple null values
+				: Uses equals, Garbage Collection[No]
+				: Not synchronized, O(1) lookup and insertion
+- Hashtable<K,V>		: HashMap + Synchronized + no null value or key
+- LinkedHashMap<K,V>		: HashMap<E> + Insertion order preserved, O(1) lookup and insertion
+- IdentityHashMap<K,V>		: Uses "==", not equals(), faster than HashMap 
+- Weaked HashMap<K,V>		: HashMap + GC[Yes]
+- TreeMap<K,V>			: Ordered + Unique elements
+				: O(log N) lookup and insertion
 * The "==" operator checks to see if the two strings are exactly the same object and the .equals() method will check if the two strings have the same value.
 * if object is specified as key doesn’t contain any references- it is eligible for garbage collection even though it is associated with WeakHashMap.
