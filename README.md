@@ -1,7 +1,7 @@
 # Collection_and_Map_in_Java
 Collection + Map + Implementattion + Java + Example
 
-* Reference	: https://www.geeksforgeeks.org/collections-in-java-2/
+* Reference	: https://www.geeksforgeeks.org/collections-in-java-2/, https://www.youtube.com/watch?v=rI3VkItC0eA&list=PLd3UqWTnYXOkVR3OR9UZGyEt9RFUbaTMZ
 								 
 ## Important things to keep in mind
 * Inside java.util.*;
