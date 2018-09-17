@@ -1,6 +1,32 @@
 # Collection_and_Map_in_Java
 Collection + Map + Implementattion + Java + Example
 
+## Questions: 
+> Why we need, collection or the purpose of using collection interfaces?
+> why this order, Indiviual{1st level}->Arrays{2nd level}->Collection{3rd level}, is important?
+> What are the disadvantages of creating Individual Elements?
+> What are the advantages of Array?
+> What are the disadvantages of Array?
+> What are the advantages of using collection interfaces?
+
+## Answers:
+
+```text
+* When using Individual Element {Problems}
+  - When creating 10000 variables, it is not good practice to creating 1000 different individual variables
+  - So array comes into the picture {Array can represent many value using a sinle variable}
+
+* When using Array {Problems}
+  1. Fix in Size		: it is compulsory to know the size in advance, before using it.
+  2. Only Homogeneous	: Holds only homogenious data type elements {but Can we resolved by using object array}
+  3. No Under lying DS	: We are always responsible to make our own methods {Array is not based on some standard data structure, so readymade mathods support is not there}
+
+* When using Collection {Benefits, to overcome above probles}
+  - Growable in nature	: Not bound to fix the size at starting
+  - Homogeneous + Hetrogeneoud, how?
+  - Under lying DS		: can use Readymade methods from standard DS
+```
+
 * Reference	: https://www.geeksforgeeks.org/collections-in-java-2/, https://www.youtube.com/watch?v=rI3VkItC0eA&list=PLd3UqWTnYXOkVR3OR9UZGyEt9RFUbaTMZ
 								 
 ## Important things to keep in mind
