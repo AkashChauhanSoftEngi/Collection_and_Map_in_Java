@@ -2,12 +2,12 @@
 Collection + Map + Implementattion + Java + Example
 
 ## Questions: 
-> Why we need, collection or the purpose of using collection interfaces?
-> why this order, Indiviual{1st level}->Arrays{2nd level}->Collection{3rd level}, is important?
-> What are the disadvantages of creating Individual Elements?
-> What are the advantages of Array?
-> What are the disadvantages of Array?
-> What are the advantages of using collection interfaces?
+* Why we need, collection or the purpose of using collection interfaces?
+* why this order, Indiviual{1st level}->Arrays{2nd level}->Collection{3rd level}, is important?
+* What are the disadvantages of creating Individual Elements?
+* What are the advantages of Array?
+* What are the disadvantages of Array?
+* What are the advantages of using collection interfaces?
 
 ## Answers:
 
@@ -30,7 +30,7 @@ Collection + Map + Implementattion + Java + Example
 * Reference	: https://www.geeksforgeeks.org/collections-in-java-2/, https://www.youtube.com/watch?v=rI3VkItC0eA&list=PLd3UqWTnYXOkVR3OR9UZGyEt9RFUbaTMZ
 								 
 ## Important things to keep in mind
-* Inside java.util.*;
+* Inside package java.util.*;
 * Collection<E> : root and Generic Interface {sort, add, isEmpty, toArray method}
                 : On objects not on primitive types
                 : Some collections(Implementations) provide duplicates, no duplicates, ordered, unordered   
