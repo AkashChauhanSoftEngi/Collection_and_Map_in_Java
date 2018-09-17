@@ -1,6 +1,8 @@
 # Collection_and_Map_in_Java
 Collection + Map + Implementattion + Java + Example
 
+* Reference	: https://www.geeksforgeeks.org/collections-in-java-2/, https://www.youtube.com/watch?v=rI3VkItC0eA&list=PLd3UqWTnYXOkVR3OR9UZGyEt9RFUbaTMZ
+
 ## Questions: 
 * Why we need, collection or the purpose of using collection interfaces?
 * why this order, Indiviual{1st level}->Arrays{2nd level}->Collection{3rd level}, is important?
@@ -10,7 +12,6 @@ Collection + Map + Implementattion + Java + Example
 * What are the advantages of using collection interfaces?
 
 ## Answers:
-
 ```text
 * When using Individual Element {Problems}
   - When creating 10000 variables, it is not good practice to creating 1000 different individual variables
@@ -27,8 +28,6 @@ Collection + Map + Implementattion + Java + Example
   - Under lying DS		: can use Readymade methods from standard DS
 ```
 
-* Reference	: https://www.geeksforgeeks.org/collections-in-java-2/, https://www.youtube.com/watch?v=rI3VkItC0eA&list=PLd3UqWTnYXOkVR3OR9UZGyEt9RFUbaTMZ
-								 
 ## Important things to keep in mind
 * Inside package java.util.*;
 * Collection<E> : root and Generic Interface {sort, add, isEmpty, toArray method}
