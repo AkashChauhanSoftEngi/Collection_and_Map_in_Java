@@ -24,7 +24,7 @@ Collection + Map + Implementattion + Java + Example
 
 * When using Collection {Benefits, to overcome above probles}
   - Growable in nature	: Not bound to fix the size at starting
-  - Homogeneous + Hetrogeneoud, how?
+  - Homogeneous + Hetrogeneoud{$HetrogeneousObjectsCollection}
   - Under lying DS		: can use Readymade methods from standard DS
 ```
 
