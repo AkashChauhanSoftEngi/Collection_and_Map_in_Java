@@ -75,6 +75,16 @@ Collection + Map + Implementattion + Java + Example
 - IdentityHashMap<K,V>		: Uses "==", not equals(), faster than HashMap 
 - Weaked HashMap<K,V>		: HashMap + GC[Yes]
 - TreeMap<K,V>			: Ordered + Unique elements
+				: Sorted according to key value(****), Thus must store valuse as keys in the map 
 				: O(log N) lookup and insertion
 * The "==" operator checks to see if the two strings are exactly the same object and the .equals() method will check if the two strings have the same value.
 * if object is specified as key doesn’t contain any references- it is eligible for garbage collection even though it is associated with WeakHashMap.
+
+
+## Aditional Details
+* Thread safe map classes
+  - Hashtable
+  - Inside java.util.Collections; {SynchronizedMap<K,V>, SynchronizedSortedMap<K,V>, SynchronizedNavigableMap<K,V>}
+  - Inside java.util.concurrent; {ConcurrentMap.class, ConcurrentHashMap.class, ConcurrentNavigableMap.class}
+    - All the classes inside java.util.concurrent package are thread safe
+  
