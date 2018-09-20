@@ -81,10 +81,25 @@ Collection + Map + Implementattion + Java + Example
 * if object is specified as key doesn’t contain any references- it is eligible for garbage collection even though it is associated with WeakHashMap.
 
 
-## Aditional Details
-* Thread safe map classes
-  - Hashtable
-  - Inside java.util.Collections; {SynchronizedMap<K,V>, SynchronizedSortedMap<K,V>, SynchronizedNavigableMap<K,V>}
-  - Inside java.util.concurrent; {ConcurrentMap.class, ConcurrentHashMap.class, ConcurrentNavigableMap.class}
+# How to maintain Thread Safety
+1. By manually synchronizing on some object, like the collection itself:
+```java
+	TreeSet<Integer> set = new TreeSet<>();
+```
+2. Using Collections.synchronizedSorted... methods
+```java
+	SortedSet<Integer> set = Collections.synchronizedSortedSet(new TreeSet<Integer>());
+	SortedMap<Integer,String> map = Collections.synchronizedSortedMap(new TreeMap<Integer,String>());
+```
+3. Using java.util.concurrent... Interfaces, classes
+```
+	//Thread safe
+	ConcurrentHashMap m = new ConcurrentHashMap();	
+```
+
+### Example {1 & 2}
+* Thread safe for map classes
+  - {1} Hashtable
+  - {2} Inside java.util.Collections class; {SynchronizedMap<K,V>, SynchronizedSortedMap<K,V>, SynchronizedNavigableMap<K,V>}
+  - {2} Inside java.util.concurrent package; {ConcurrentMap.class{I}, ConcurrentHashMap.class, ConcurrentNavigableMap.class}
     - All the classes inside java.util.concurrent package are thread safe
-  
