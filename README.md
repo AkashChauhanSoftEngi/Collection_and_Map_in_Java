@@ -103,3 +103,23 @@ Collection + Map + Implementattion + Java + Example
   - {2} Inside java.util.Collections class; {SynchronizedMap<K,V>, SynchronizedSortedMap<K,V>, SynchronizedNavigableMap<K,V>}
   - {2} Inside java.util.concurrent package; {ConcurrentMap.class{I}, ConcurrentHashMap.class, ConcurrentNavigableMap.class}
     - All the classes inside java.util.concurrent package are thread safe
+
+## ConcurrentHashMap
+ * Implementation of ConcurrentMap interface (underlying DS is Hash table)
+ * Provides Thread safety without locking or blocking resources [but segment locking]
+ * Uses Final and Volatile variables
+ * Faster than hash table, good for Multi Thread application
+ * Read Operations: No locking mechanism, multiple threads are allowed
+ * Write/Update Operations: Bucket/segment level locking instead of total map locking 
+   - 16 threads in parallel can write/update by default
+ * Default size: 16 buckets 
+ * Default concurrency level: 16
+ * Uses hash buckets {List of HashEntry elements}
+ * 2 threads can update the ConcurrentHashMap unless they are not in the same segment
+ * Segment size: no of buckets {depends on concurrency level, it may vary}
+ * Segment is like a mini specialized version of hashtable that contains many buckets
+ * Each segment holds a single lock, thus no two entries in the segment can be updated by more than one thread at a time.
+ * No null value for key and value
+ * Any map can be transfered as parameter and gets converted into CHM, by using new CHM(M)
+ * Reference: https://www.youtube.com/watch?v=IUo1Ym-Uj_I
+ 
