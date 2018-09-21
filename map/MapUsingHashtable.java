@@ -10,7 +10,7 @@ HashMap vs. HashTable
 - HashMap is non synchronized. It is not-thread safe and can’t be shared between many threads without proper synchronization code whereas Hashtable is synchronized. It is thread-safe and can be shared with many threads.
 - HashMap allows one null key and multiple null values whereas Hashtable doesn’t allow any null key or value.
 - HashMap is generally preferred over HashTable if thread synchronization is not needed
-- Data itself can be used for finding keys, small size [k=Value%Total No of Elements]
+- Keys itself can be used for creating hash code {small size} [hk=k%Total No of Elements]
 - Collision Resolution
   : Open addressing
     - Linear Probing: if same index then choose next empty cell.
