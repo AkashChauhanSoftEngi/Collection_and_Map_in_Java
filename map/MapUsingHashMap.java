@@ -6,7 +6,12 @@ import java.util.Map;
 /*
  * Implementations classes: HashMap<String, Integer>();
  * No duplicates, overwrite with latest value
- * Multiple null values are allowed
+ * One Null key and Multiple null values are allowed
+ * 
+ * Inside Map Interface, there is a another interface called EntrySet<K,V> which is responsible for storing individual pair
+ * Map Interface, there is a method called entrySet(), which returns Set<Map.Entry<K, V>>
+ * Map Interface, there is a method called keySet(), which return keys {Non-Duplicates} into a Set<K>
+ * getKey(), and getValue(), to get individual key and values
  * */
 
 public class MapUsingHashMap {
