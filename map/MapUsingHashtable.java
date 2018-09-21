@@ -7,9 +7,10 @@ import java.util.Map;
 /* 
 HashMap vs. HashTable
 - HashTable is synchronized and thread safe [Main Thing]
-- HashMap is non synchronized. It is not-thread safe and can’t be shared between many threads without proper synchronization code whereas Hashtable is synchronized. It is thread-safe and can be shared with many threads.
-- HashMap allows one null key and multiple null values whereas Hashtable doesn’t allow any null key or value.
+- HashMap is non synchronized. It is not-thread safe and canâ€™t be shared between many threads without proper synchronization code whereas Hashtable is synchronized. It is thread-safe and can be shared with many threads.
+- HashMap allows one null key and multiple null values whereas Hashtable doesnâ€™t allow any null key or value.
 - HashMap is generally preferred over HashTable if thread synchronization is not needed
+- Refrence: https://www.youtube.com/watch?v=KyUTuwz_b7Q
 */
  
 public class MapUsingHashtable {
@@ -25,14 +26,14 @@ public class MapUsingHashtable {
 			map.put(4,null);
 		}
 		catch(Exception e){
-			System.out.println("Hashtable doesn’t allow any null value");
+			System.out.println("Hashtable doesnâ€™t allow any null value");
 		}
 		
 		try{
 			map.put(null,"Five");
 		}
 		catch(Exception e){
-			System.out.println("Hashtable doesn’t allow any null key");
+			System.out.println("Hashtable doesnâ€™t allow any null key");
 		}
 		System.out.println("Hashtable: ");
 		
