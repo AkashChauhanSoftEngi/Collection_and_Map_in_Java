@@ -82,9 +82,9 @@ Collection + Map + Implementattion + Java + Example
 
 
 # How to maintain Thread Safety
-1. By manually synchronizing on some object, like the collection itself:
+1. By using predefined thread safe classes
 ```java
-	TreeSet<Integer> set = new TreeSet<>();
+	Hashtable, Vector
 ```
 2. Using Collections.synchronizedSorted... methods
 ```java
