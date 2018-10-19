@@ -49,7 +49,7 @@ Collection + Map + Implementattion + Java + Example
 - Queue<E>		: FIFO, allow dublicates, allows multiple null elements
 
 ## Classes implement List<E> {Allows duplicates, Many null values, order preserved}
-- ArrayList<E>		: Resizable-array, capacity grows automatically, not synchronized, good for single thread App
+- ArrayList<E>		: Resizable-array, capacity grows automatically[*2,*1.5-Java8], not synchronized, good for single thread App
 - LisnkedList<E>	: not synchronized, insertion/deletion is faster than ArrayList<E>
 - Vector<E>		: growable array, Vector methods are all synchronized
 - Stack<E>		: Lifo, implements Vectors<E>, methods are all synchronized
