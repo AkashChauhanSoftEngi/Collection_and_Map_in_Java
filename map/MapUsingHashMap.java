@@ -12,6 +12,7 @@ import java.util.Map;
  * Map Interface, there is a method called entrySet(), which returns Set<Map.Entry<K, V>>
  * Map Interface, there is a method called keySet(), which return keys {Non-Duplicates} into a Set<K>
  * getKey(), and getValue(), to get individual key and values
+ * size grows in power of 2, when capacity * loadfactor reaches to threshold
  * */
 
 public class MapUsingHashMap {
