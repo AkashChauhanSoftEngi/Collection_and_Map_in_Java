@@ -9,8 +9,10 @@ import java.util.List;
  * Preserve Insertion Order
  * 
  * {ArrayList}
- * 
- * 
+ * Arrays.copyOf(elementData, newCapacity), the new array with double the capacity is created 
+ * In Java-8, new capacity 1.5 times the older capacity 
+ * - int newCapacity = oldCapacity + (oldCapacity >> 1);
+ * - right shifting an integer by 1 is equivalent to division by 2.
  * */
 public class ListUsingArrayList {
 
