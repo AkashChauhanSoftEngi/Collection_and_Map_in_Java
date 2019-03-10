@@ -15,7 +15,7 @@ Collection + Map + Implementattion + Java + Example
 ```text
 * When using Individual Element {Problems}
   - When creating 10000 variables, it is not good practice to creating 1000 different individual variables
-  - So array comes into the picture {Array can represent many value using a sinle variable}
+  - So array comes into the picture {Array can represent many value using a single variable}
 
 * When using Array {Problems}
   1. Fix in Size		: it is compulsory to know the size in advance, before using it.
